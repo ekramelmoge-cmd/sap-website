@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Team | Somali American Partnerships</title>
+  <meta name="description" content="Meet the dedicated team behind Somali American Partnerships in Minneapolis, MN.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    :root{--navy:#0B1E3D;--navy2:#102548;--navy3:#163060;--gold:#C9A84C;--gold2:#E8C97A;--cream:#FAF8F3;--cream2:#F2EEE5;--text:#0B1E3D;--muted:#6B7A99;--white:#FFFFFF}
+    body{font-family:'DM Sans',sans-serif;color:var(--text);background:var(--white);line-height:1.6;overflow-x:hidden}
+    a{text-decoration:none;color:inherit}
+    nav{background:var(--navy);padding:0 48px;display:flex;align-items:center;justify-content:space-between;height:70px;position:sticky;top:0;z-index:100}
+    .logo{display:flex;align-items:center;gap:12px}
+    .logo-mark{width:38px;height:38px;border:2px solid var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-size:16px;font-weight:600;color:var(--gold)}
+    .logo-text{color:var(--white);font-size:14px;font-weight:500;letter-spacing:0.04em}
+    .logo-sub{color:var(--gold2);font-size:10px;font-weight:300;letter-spacing:0.08em;text-transform:uppercase;display:block;margin-top:1px}
+    .nav-links{display:flex;gap:28px;align-items:center}
+    .nav-links a{color:rgba(255,255,255,0.75);font-size:13px;font-weight:400;letter-spacing:0.03em;transition:color 0.2s}
+    .nav-links a:hover,.nav-links a.active{color:var(--gold2)}
+    .nav-cta{background:var(--gold)!important;color:var(--navy)!important;padding:9px 22px;border-radius:2px;font-weight:500!important}
+    .hero{background:var(--navy);padding:90px 48px 70px;position:relative;overflow:hidden}
+    .hero-accent{position:absolute;right:0;top:0;width:35%;height:100%;background:var(--navy2);clip-path:polygon(12% 0,100% 0,100% 100%,0 100%)}
+    .hero-content{position:relative;z-index:2}
+    .eyebrow{color:var(--gold);font-size:11px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;margin-bottom:16px;display:flex;align-items:center;gap:10px}
+    .eyebrow::before{content:'';width:24px;height:1px;background:var(--gold)}
+    h1{font-family:'Cormorant Garamond',serif;font-size:52px;font-weight:500;color:var(--white);line-height:1.15;margin-bottom:16px}
+    .hero p{color:rgba(255,255,255,0.6);font-size:16px;font-weight:300;max-width:520px;line-height:1.75}
+    section{padding:80px 48px}
+    h2{font-family:'Cormorant Garamond',serif;font-size:42px;font-weight:500;color:var(--navy);line-height:1.15;margin-bottom:16px}
+    .section-eyebrow{color:var(--gold);font-size:11px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;display:flex;align-items:center;gap:10px;margin-bottom:16px}
+    .section-eyebrow::before{content:'';width:24px;height:1px;background:var(--gold)}
+    .leadership{background:var(--white);padding:80px 48px}
+    .team-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px}
+    .team-card{background:var(--cream);border:0.5px solid rgba(11,30,61,0.08);padding:36px 28px;position:relative;overflow:hidden;transition:transform 0.2s}
+    .team-card:hover{transform:translateY(-4px)}
+    .team-card::before{content:'';position:absolute;top:0;left:0;width:3px;height:0;background:var(--gold);transition:height 0.3s}
+    .team-card:hover::before{height:100%}
+    .team-avatar{width:64px;height:64px;border-radius:50%;background:var(--navy);display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:600;color:var(--gold2);margin-bottom:20px}
+    .team-name{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:500;color:var(--navy);margin-bottom:4px}
+    .team-role{font-size:11px;color:var(--gold);font-weight:500;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:12px}
+    .team-bio{font-size:13px;color:var(--muted);line-height:1.7;font-weight:300}
+    .join{background:var(--navy);padding:80px 48px}
+    .join-inner{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+    .join h2{color:var(--white)}
+    .join p{color:rgba(255,255,255,0.55);font-size:16px;font-weight:300;line-height:1.8;margin-top:16px;margin-bottom:32px}
+    .btn-gold{background:var(--gold);color:var(--navy);padding:14px 32px;border-radius:2px;font-size:14px;font-weight:500;display:inline-block;transition:background 0.2s}
+    .btn-gold:hover{background:var(--gold2)}
+    .volunteer-card{background:rgba(255,255,255,0.05);border:1px solid rgba(201,168,76,0.2);padding:28px;margin-bottom:16px}
+    .volunteer-title{font-family:'Cormorant Garamond',serif;font-size:20px;color:var(--gold2);margin-bottom:8px}
+    .volunteer-desc{font-size:13px;color:rgba(255,255,255,0.5);line-height:1.6;font-weight:300}
+    footer{background:var(--navy);border-top:1px solid rgba(201,168,76,0.15);padding:48px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:20px}
+    .footer-logo{font-family:'Cormorant Garamond',serif;font-size:18px;color:var(--white);font-weight:500}
+    .footer-copy{font-size:12px;color:rgba(255,255,255,0.35)}
+    .footer-links{display:flex;gap:24px}
+    .footer-links a{font-size:12px;color:rgba(255,255,255,0.4);transition:color 0.2s}
+    .footer-links a:hover{color:var(--gold2)}
+    @media(max-width:768px){nav{padding:0 20px}.nav-links{display:none}.hero{padding:60px 24px 40px}h1{font-size:36px}section,.leadership,.join{padding:50px 24px}.team-grid{grid-template-columns:1fr}.join-inner{grid-template-columns:1fr}footer{flex-direction:column;text-align:center}}
+  
+    .top-bar{background:#102548;padding:8px 48px;display:flex;align-items:center;justify-content:space-between}
+    .top-bar-left{font-size:12px;color:rgba(255,255,255,0.5)}
+    .top-bar-right{display:flex;gap:24px}
+    .top-bar-right a{font-size:12px;color:rgba(255,255,255,0.6);text-decoration:none;transition:color 0.2s}
+    .top-bar-right a:hover{color:#E8C97A}
+    nav{background:#fff;padding:0 48px;display:flex;align-items:center;justify-content:space-between;height:72px;border-bottom:1px solid rgba(11,30,61,0.08);position:sticky;top:0;z-index:100;box-shadow:0 2px 12px rgba(0,0,0,0.04)}
+    .logo{display:flex;align-items:center;gap:12px;text-decoration:none}
+    .logo-icon{display:flex;align-items:center}
+    .logo-name{font-family:'Cormorant Garamond',serif;font-size:17px;font-weight:600;color:#0B1E3D;line-height:1.2}
+    .logo-sub{font-size:10px;color:#6B7A99;letter-spacing:0.08em;text-transform:uppercase}
+    .nav-links{display:flex;gap:4px;align-items:center}
+    .nav-item{position:relative}
+    .nav-item>a{color:#0B1E3D;font-size:14px;padding:8px 13px;display:flex;align-items:center;gap:4px;transition:color 0.2s;white-space:nowrap;text-decoration:none}
+    .nav-item>a:hover{color:#C9A84C}
+    .nav-arrow{font-size:10px;opacity:0.4}
+    .dropdown{position:absolute;top:calc(100% + 4px);left:0;background:#fff;border:0.5px solid rgba(11,30,61,0.1);box-shadow:0 8px 24px rgba(0,0,0,0.08);min-width:200px;opacity:0;visibility:hidden;transition:all 0.2s;z-index:200}
+    .nav-item:hover .dropdown{opacity:1;visibility:visible}
+    .dropdown a{display:block;padding:10px 20px;font-size:13px;color:#0B1E3D;border-bottom:0.5px solid rgba(11,30,61,0.05);transition:background 0.15s;text-decoration:none}
+    .dropdown a:last-child{border:none}
+    .dropdown a:hover{background:#FAF8F3;color:#0B1E3D}
+    .nav-ctas{display:flex;gap:8px;margin-left:16px}
+    .btn-outline-nav{border:1.5px solid #0B1E3D;color:#0B1E3D;padding:8px 16px;font-size:13px;font-weight:500;transition:all 0.2s;text-decoration:none}
+    .btn-outline-nav:hover{background:#0B1E3D;color:#fff}
+    .btn-donate-nav{background:#C9A84C;color:#0B1E3D;padding:8px 18px;font-size:13px;font-weight:500;transition:background 0.2s;text-decoration:none}
+    .btn-donate-nav:hover{background:#E8C97A}
+    @media(max-width:768px){.top-bar{display:none}nav{padding:0 20px}.nav-links,.nav-ctas{display:none}}
+    </style>
+</head>
+<body>
+<div class="top-bar">
+  <div class="top-bar-left">Somali American Partnerships &nbsp;&middot;&nbsp; Minneapolis, Minnesota &nbsp;&middot;&nbsp; 501(c)(3) Nonprofit</div>
+  <div class="top-bar-right">
+    <a href="tel:6122233343">612-223-3343</a>
+    <a href="mailto:ekram@sap-mn.org">ekram@sap-mn.org</a>
+    <a href="support.html">Get Help</a>
+  </div>
+</div>
+<nav>
+  <a href="index.html" class="logo">
+    <div class="logo-icon"><svg viewBox="0 0 80 95" xmlns="http://www.w3.org/2000/svg" width="44" height="52">
+          <path d="M0 90 Q40 100 80 90" fill="none" stroke="#C9A84C" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="14" cy="78" r="6" fill="#0B1E3D"/>
+          <path d="M4 92 Q14 82 24 92" fill="#0B1E3D"/>
+          <circle cx="40" cy="75" r="5" fill="#C9A84C"/>
+          <path d="M32 90 Q40 81 48 90" fill="#C9A84C"/>
+          <circle cx="66" cy="78" r="6" fill="#0B1E3D"/>
+          <path d="M56 92 Q66 82 76 92" fill="#0B1E3D"/>
+          <rect x="37" y="38" width="6" height="38" rx="3" fill="#0B1E3D"/>
+          <path d="M40 58 Q24 46 12 28" fill="none" stroke="#0B1E3D" stroke-width="2.5" stroke-linecap="round"/>
+          <path d="M40 52 Q58 38 70 20" fill="none" stroke="#0B1E3D" stroke-width="2.5" stroke-linecap="round"/>
+          <path d="M40 44 Q40 24 40 10" fill="none" stroke="#C9A84C" stroke-width="3" stroke-linecap="round"/>
+          <circle cx="40" cy="8" r="9" fill="#C9A84C"/>
+          <circle cx="9" cy="24" r="7" fill="#0B1E3D" opacity="0.5"/>
+          <circle cx="72" cy="16" r="7" fill="#0B1E3D" opacity="0.5"/>
+        </svg></div>
+    <div>
+      <div class="logo-name">Somali American Partnerships</div>
+      <div class="logo-sub">Minneapolis, Minnesota</div>
+    </div>
+  </a>
+  <div class="nav-links">
+    <div class="nav-item">
+      <a href="about.html">About Us <span class="nav-arrow">&#9662;</span></a>
+      <div class="dropdown">
+        <a href="about.html">Our Mission &amp; Story</a>
+        <a href="team.html">Leadership &amp; Staff</a>
+      </div>
+    </div>
+    <div class="nav-item">
+      <a href="programs.html">Programs <span class="nav-arrow">&#9662;</span></a>
+      <div class="dropdown">
+        <a href="programs.html">All Programs</a>
+        <a href="programs.html">Health Navigation</a>
+        <a href="programs.html">Youth &amp; Education</a>
+        <a href="programs.html">Financial Stability</a>
+        <a href="programs.html">Community Safety</a>
+      </div>
+    </div>
+    <div class="nav-item"><a href="team.html"class="active">Our Team</a></div>
+    <div class="nav-item"><a href="support.html">Get Support</a></div>
+    <div class="nav-item">
+      <a href="contact.html">Contact <span class="nav-arrow">&#9662;</span></a>
+      <div class="dropdown">
+        <a href="contact.html">Contact Us</a>
+        <a href="contact.html">Partner With Us</a>
+      </div>
+    </div>
+  </div>
+  <div class="nav-ctas">
+    <a href="support.html" class="btn-outline-nav">Get Help</a>
+    <a href="index.html#donate" class="btn-donate-nav">Donate</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <div class="hero-accent"></div>
+  <div class="hero-content">
+    <div class="eyebrow">Our Team</div>
+    <h1>Our Team</h1>
+    <p>Dedicated professionals with deep roots in both the Somali American community and Minnesota's nonprofit and civic landscape.</p>
+  </div>
+</div>
+
+<div class="leadership">
+  <div class="section-eyebrow">Organizational Leadership</div>
+  <h2>Our Team</h2>
+  <div class="team-grid">
+    <div class="team-card">
+      <div class="team-name">Ekram Elmoge</div>
+      <div class="team-role">Executive Director</div>
+      <p class="team-bio">Provides overall organizational leadership and strategic direction for SAP. Oversees all programs, partnerships, fundraising, and operations to advance SAP's mission of serving Somali American families across the Twin Cities.</p>
+    </div>
+    <div class="team-card">
+      <div class="team-name">Misbil Haji</div>
+      <div class="team-role">Health Department Director</div>
+      <p class="team-bio">Oversees SAP's health programs, including culturally responsive health navigation, insurance enrollment support, maternal and child health resources, and connections to Somali-speaking healthcare providers across the Twin Cities.</p>
+    </div>
+    <div class="team-card">
+      <div class="team-name">Amin Abdullahi</div>
+      <div class="team-role">Director of Programs</div>
+      <p class="team-bio">Directs SAP's full program portfolio including youth mentorship, education support, financial literacy, workforce development, and community safety initiatives. Ensures programs are culturally grounded and delivering measurable impact for families.</p>
+    </div>
+    <div class="team-card">
+      <div class="team-name">Sudais Oumar</div>
+      <div class="team-role">Administrative Support</div>
+      <p class="team-bio">Supports the day-to-day administrative operations of SAP, ensuring smooth coordination across teams, programs, and community partners to keep the organization running effectively.</p>
+    </div>
+    <div class="team-card" style="background:var(--navy);border-color:rgba(201,168,76,0.15)">
+      <div class="team-name" style="color:var(--white)">Join Our Team</div>
+      <div class="team-role">Open Roles & Volunteers</div>
+      <p class="team-bio" style="color:rgba(255,255,255,0.45)">We're always looking for passionate people who believe in culturally grounded community work. Reach out to learn how you can contribute to SAP's mission.</p>
+    </div>
+  </div>
+</div>
+
+    </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+<div class="join">
+  <div class="join-inner">
+    <div>
+      <div class="eyebrow" style="color:var(--gold)">Get Involved</div>
+      <h2>Join Our Mission</h2>
+      <p>Whether you're a professional looking to volunteer your skills, a community member wanting to give back, or an organization looking to partner — there's a place for you at SAP.</p>
+      <a href="contact.html" class="btn-gold">Reach Out Today</a>
+    </div>
+    <div>
+      <div class="volunteer-card">
+        <div class="volunteer-title">Volunteer</div>
+        <p class="volunteer-desc">Share your time and skills with Somali American families. We welcome volunteers in program delivery, tutoring, translation, and more.</p>
+      </div>
+      <div class="volunteer-card">
+        <div class="volunteer-title">Professional Skills</div>
+        <p class="volunteer-desc">Lawyers, healthcare providers, financial advisors, and other professionals can contribute pro bono expertise to our community.</p>
+      </div>
+      </div>
+  </div>
+</div>
+
+<footer>
+  <div><div class="footer-logo">Somali American Partnerships</div><div class="footer-copy" style="margin-top:6px">Minneapolis, MN · 501(c)(3) Nonprofit</div></div>
+  <div class="footer-links">
+    <a href="index.html">Home</a><a href="about.html">About</a><a href="programs.html">Programs</a><a href="team.html">Team</a><a href="support.html">Support</a><a href="contact.html">Contact</a>
+  </div>
+  <div class="footer-copy">© 2026 SAP. All rights reserved.</div>
+</footer>
+</body>
+</html>

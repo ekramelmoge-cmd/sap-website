@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Somali American Partnerships | Minneapolis, MN</title>
+  <meta name="description" content="Somali American Partnerships (SAP) is a 501(c)(3) nonprofit in Minneapolis, MN serving Somali American families through health, education, financial stability, and community safety programs.">
+  <meta name="keywords" content="Somali American Partnerships, SAP, Somali nonprofit Minneapolis, Somali community Minnesota, Somali families Twin Cities">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.sap-mn.com">
+  <meta property="og:title" content="Somali American Partnerships | Minneapolis, MN">
+  <meta property="og:description" content="A 501(c)(3) nonprofit connecting Somali American families in the Twin Cities with culturally responsive programs.">
+  <meta property="og:url" content="https://www.sap-mn.com">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    :root{--navy:#0B1E3D;--navy2:#102548;--navy3:#163060;--gold:#C9A84C;--gold2:#E8C97A;--cream:#FAF8F3;--cream2:#F2EEE5;--text:#0B1E3D;--muted:#6B7A99;--white:#FFFFFF}
+    body{font-family:'DM Sans',sans-serif;color:var(--text);background:var(--white);line-height:1.6;overflow-x:hidden}
+    a{text-decoration:none;color:inherit}
+    .top-bar{background:var(--navy2);padding:8px 48px;display:flex;align-items:center;justify-content:space-between}
+    .top-bar-left{font-size:12px;color:rgba(255,255,255,0.5)}
+    .top-bar-right{display:flex;gap:24px}
+    .top-bar-right a{font-size:12px;color:rgba(255,255,255,0.6);transition:color 0.2s}
+    .top-bar-right a:hover{color:var(--gold2)}
+    nav{background:var(--white);padding:0 48px;display:flex;align-items:center;justify-content:space-between;height:72px;border-bottom:1px solid rgba(11,30,61,0.08);position:sticky;top:0;z-index:100;box-shadow:0 2px 12px rgba(0,0,0,0.04)}
+    .logo{display:flex;align-items:center;gap:12px}
+    .logo-rings svg{width:42px;height:42px}
+    .logo-name{font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:600;color:var(--navy);line-height:1.2}
+    .logo-sub{font-size:10px;color:var(--muted);letter-spacing:0.08em;text-transform:uppercase}
+    .nav-links{display:flex;gap:4px;align-items:center}
+    .nav-item{position:relative}
+    .nav-item>a{color:var(--navy);font-size:14px;padding:8px 14px;display:flex;align-items:center;gap:4px;transition:color 0.2s;white-space:nowrap}
+    .nav-item>a:hover{color:var(--gold)}
+    .nav-arrow{font-size:10px;opacity:0.4}
+    .dropdown{position:absolute;top:calc(100% + 4px);left:0;background:var(--white);border:0.5px solid rgba(11,30,61,0.1);box-shadow:0 8px 24px rgba(0,0,0,0.08);min-width:210px;opacity:0;visibility:hidden;transition:all 0.2s;z-index:200}
+    .nav-item:hover .dropdown{opacity:1;visibility:visible}
+    .dropdown a{display:block;padding:10px 20px;font-size:13px;color:var(--text);border-bottom:0.5px solid rgba(11,30,61,0.05);transition:background 0.15s}
+    .dropdown a:last-child{border:none}
+    .dropdown a:hover{background:var(--cream);color:var(--navy)}
+    .nav-ctas{display:flex;gap:8px;margin-left:16px}
+    .btn-outline-nav{border:1.5px solid var(--navy);color:var(--navy);padding:8px 18px;font-size:13px;font-weight:500;transition:all 0.2s}
+    .btn-outline-nav:hover{background:var(--navy);color:var(--white)}
+    .btn-donate-nav{background:var(--gold);color:var(--navy);padding:8px 20px;font-size:13px;font-weight:500;transition:background 0.2s}
+    .btn-donate-nav:hover{background:var(--gold2)}
+    .hero{position:relative;background:var(--navy);min-height:86vh;display:flex;align-items:center;overflow:hidden}
+    .hero-pattern{position:absolute;right:0;top:0;width:45%;height:100%;opacity:0.04}
+    .hero-pattern svg{width:100%;height:100%}
+    .hero-content{position:relative;z-index:2;padding:80px 48px 120px}
+    .hero-eyebrow{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(201,168,76,0.3);padding:6px 16px;margin-bottom:28px}
+    .hero-eyebrow span{font-size:11px;color:var(--gold);font-weight:500;letter-spacing:0.12em;text-transform:uppercase}
+    .hero h1{font-family:'Cormorant Garamond',serif;font-size:66px;font-weight:500;color:var(--white);line-height:1.08;margin-bottom:24px;max-width:640px}
+    .hero h1 em{color:var(--gold2);font-style:italic}
+    .hero-desc{font-size:17px;color:rgba(255,255,255,0.62);font-weight:300;line-height:1.78;max-width:520px;margin-bottom:40px}
+    .hero-actions{display:flex;gap:16px;flex-wrap:wrap}
+    .btn-hero-gold{background:var(--gold);color:var(--navy);padding:15px 34px;font-size:15px;font-weight:500;transition:background 0.2s;display:inline-block}
+    .btn-hero-gold:hover{background:var(--gold2)}
+    .btn-hero-outline{border:1.5px solid rgba(255,255,255,0.3);color:rgba(255,255,255,0.82);padding:15px 34px;font-size:15px;transition:all 0.2s;display:inline-block}
+    .btn-hero-outline:hover{border-color:var(--gold);color:var(--gold)}
+    .hero-stats{position:absolute;bottom:0;left:0;right:0;background:rgba(7,16,32,0.7);padding:22px 48px;display:grid;grid-template-columns:repeat(4,1fr)}
+    .hero-stat{text-align:center;border-right:1px solid rgba(255,255,255,0.07)}
+    .hero-stat:last-child{border:none}
+    .hero-stat-num{font-family:'Cormorant Garamond',serif;font-size:34px;font-weight:600;color:var(--gold);line-height:1}
+    .hero-stat-label{font-size:11px;color:rgba(255,255,255,0.45);letter-spacing:0.08em;text-transform:uppercase;margin-top:4px}
+    .quick-links{background:var(--gold);display:grid;grid-template-columns:repeat(4,1fr)}
+    .quick-link{padding:22px 24px;display:flex;align-items:center;gap:14px;border-right:1px solid rgba(11,30,61,0.1);transition:background 0.2s}
+    .quick-link:last-child{border:none}
+    .quick-link:hover{background:rgba(11,30,61,0.07)}
+    .ql-icon{width:34px;height:34px;border-radius:50%;background:rgba(11,30,61,0.12);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+    .ql-icon svg{width:16px;height:16px;stroke:var(--navy);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+    .ql-title{font-size:14px;font-weight:500;color:var(--navy)}
+    .ql-sub{font-size:11px;color:rgba(11,30,61,0.5);margin-top:2px}
+    .mission{padding:80px 48px;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+    .eyebrow{font-size:11px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);display:flex;align-items:center;gap:8px;margin-bottom:16px}
+    .eyebrow::before{content:'';width:24px;height:1px;background:var(--gold)}
+    h2{font-family:'Cormorant Garamond',serif;font-size:42px;font-weight:500;color:var(--navy);line-height:1.15;margin-bottom:16px}
+    .mission p{font-size:16px;color:var(--muted);font-weight:300;line-height:1.8;margin-bottom:16px}
+    .btn-primary{background:var(--navy);color:var(--white);padding:13px 28px;font-size:14px;font-weight:500;display:inline-block;transition:background 0.2s;margin-top:8px}
+    .btn-primary:hover{background:var(--navy2)}
+    .mission-visual{background:var(--navy);padding:44px}
+    .mission-quote{font-family:'Cormorant Garamond',serif;font-size:22px;color:var(--gold2);line-height:1.55;font-style:italic;margin-bottom:20px}
+    .mission-divider{width:40px;height:2px;background:var(--gold);margin:20px 0}
+    .mission-attr{font-size:12px;color:rgba(255,255,255,0.4);letter-spacing:0.08em;text-transform:uppercase}
+    .mission-facts{margin-top:28px;display:flex;gap:32px}
+    .mission-fact-num{font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:600;color:var(--gold)}
+    .mission-fact-label{font-size:11px;color:rgba(255,255,255,0.4);letter-spacing:0.06em;text-transform:uppercase;margin-top:2px}
+    .programs{background:var(--cream);padding:80px 48px}
+    .section-header{text-align:center;margin-bottom:52px}
+    .section-eyebrow{font-size:11px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px}
+    .section-eyebrow::before,.section-eyebrow::after{content:'';flex:1;max-width:36px;height:1px;background:var(--gold)}
+    .programs-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:2px;background:rgba(11,30,61,0.07)}
+    .prog-card{background:var(--white);padding:44px 36px;position:relative;overflow:hidden;transition:background 0.3s;display:block}
+    .prog-card:hover{background:var(--navy)}
+    .prog-num{font-family:'Cormorant Garamond',serif;font-size:52px;font-weight:600;color:rgba(11,30,61,0.05);line-height:1;margin-bottom:2px;transition:color 0.3s}
+    .prog-card:hover .prog-num{color:rgba(255,255,255,0.04)}
+    .prog-tag{display:inline-block;background:var(--cream2);color:var(--navy);font-size:10px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;padding:4px 12px;margin-bottom:14px;transition:all 0.3s}
+    .prog-card:hover .prog-tag{background:rgba(201,168,76,0.15);color:var(--gold2)}
+    .prog-title{font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:500;color:var(--navy);margin-bottom:10px;transition:color 0.3s}
+    .prog-card:hover .prog-title{color:var(--white)}
+    .prog-desc{font-size:14px;color:var(--muted);line-height:1.75;font-weight:300;transition:color 0.3s}
+    .prog-card:hover .prog-desc{color:rgba(255,255,255,0.55)}
+    .prog-arrow{position:absolute;bottom:28px;right:28px;width:34px;height:34px;border:1px solid rgba(11,30,61,0.1);display:flex;align-items:center;justify-content:center;transition:all 0.3s}
+    .prog-card:hover .prog-arrow{background:var(--gold);border-color:var(--gold)}
+    .prog-arrow svg{width:14px;height:14px;stroke:var(--muted);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;transition:stroke 0.3s}
+    .prog-card:hover .prog-arrow svg{stroke:var(--navy)}
+    .impact{background:var(--navy);padding:80px 48px}
+    .impact-inner{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+    .impact h2{color:var(--white)}
+    .impact p{font-size:16px;color:rgba(255,255,255,0.52);font-weight:300;line-height:1.8;margin-top:14px;margin-bottom:32px}
+    .btn-gold{background:var(--gold);color:var(--navy);padding:13px 28px;font-size:14px;font-weight:500;display:inline-block;transition:background 0.2s}
+    .btn-gold:hover{background:var(--gold2)}
+    .impact-stats{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:rgba(255,255,255,0.05)}
+    .impact-stat{background:rgba(255,255,255,0.03);padding:32px;text-align:center}
+    .impact-num{font-family:'Cormorant Garamond',serif;font-size:48px;font-weight:600;color:var(--gold);line-height:1}
+    .impact-label{font-size:11px;color:rgba(255,255,255,0.4);letter-spacing:0.08em;text-transform:uppercase;margin-top:6px}
+    .action-split{display:grid;grid-template-columns:1fr 1fr}
+    .action-panel{padding:72px 56px;display:flex;flex-direction:column;justify-content:center}
+    .action-panel.light{background:var(--cream2)}
+    .action-panel.dark{background:var(--navy)}
+    .action-eyebrow{font-size:11px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);display:flex;align-items:center;gap:8px;margin-bottom:16px}
+    .action-eyebrow::before{content:'';width:24px;height:1px;background:var(--gold)}
+    .action-panel.light h2{color:var(--navy)}
+    .action-panel.dark h2{color:var(--white)}
+    .action-panel p{font-size:15px;font-weight:300;line-height:1.8;margin:14px 0 28px}
+    .action-panel.light p{color:var(--muted)}
+    .action-panel.dark p{color:rgba(255,255,255,0.5)}
+    .btn-navy{background:var(--navy);color:var(--white);padding:13px 28px;font-size:14px;font-weight:500;display:inline-block;transition:background 0.2s}
+    .btn-navy:hover{background:var(--navy2)}
+    .newsletter{background:var(--gold);padding:52px 48px;display:flex;align-items:center;justify-content:space-between;gap:40px}
+    .newsletter h3{font-family:'Cormorant Garamond',serif;font-size:30px;font-weight:500;color:var(--navy)}
+    .newsletter p{font-size:14px;color:rgba(11,30,61,0.6);margin-top:6px;font-weight:300}
+    .newsletter-form{display:flex;max-width:460px;flex:1}
+    .newsletter-form input{flex:1;background:var(--white);border:none;padding:13px 18px;font-family:'DM Sans',sans-serif;font-size:14px;outline:none}
+    .newsletter-form button{background:var(--navy);color:var(--white);border:none;padding:13px 22px;font-family:'DM Sans',sans-serif;font-size:14px;font-weight:500;cursor:pointer;white-space:nowrap;transition:background 0.2s}
+    .newsletter-form button:hover{background:var(--navy2)}
+    .donate{padding:80px 48px;background:var(--white)}
+    .donate-inner{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+    .donate p{font-size:16px;color:var(--muted);font-weight:300;line-height:1.8;margin-bottom:16px}
+    .donate-bullets{list-style:none;margin:16px 0 28px;display:flex;flex-direction:column;gap:10px}
+    .donate-bullets li{display:flex;align-items:center;gap:10px;font-size:14px}
+    .donate-bullets li::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--gold);flex-shrink:0}
+    .donate-tiers{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-bottom:14px}
+    .tier{border:1px solid rgba(11,30,61,0.1);padding:20px;cursor:pointer;transition:all 0.2s}
+    .tier:hover,.tier.active{background:rgba(201,168,76,0.06);border-color:var(--gold)}
+    .tier-amount{font-family:'Cormorant Garamond',serif;font-size:30px;font-weight:600;color:var(--navy);line-height:1}
+    .tier-desc{font-size:12px;color:var(--muted);line-height:1.5;margin-top:6px;font-weight:300}
+    .donate-btn{display:block;background:var(--gold);color:var(--navy);text-align:center;padding:15px;font-size:15px;font-weight:500;cursor:pointer;border:none;width:100%;font-family:'DM Sans',sans-serif;transition:background 0.2s}
+    .donate-btn:hover{background:var(--gold2)}
+    .partners{background:var(--cream);padding:48px;text-align:center}
+    .partners-label{font-size:11px;color:var(--muted);letter-spacing:0.12em;text-transform:uppercase;margin-bottom:28px}
+    .partners-row{display:flex;align-items:center;justify-content:center;gap:40px;flex-wrap:wrap}
+    .partner-logo{font-size:12px;font-weight:500;color:rgba(11,30,61,0.3);letter-spacing:0.06em;text-transform:uppercase;border:0.5px solid rgba(11,30,61,0.1);padding:10px 18px}
+    footer{background:var(--navy)}
+    .footer-top{padding:64px 48px;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px}
+    .footer-logo-name{font-family:'Cormorant Garamond',serif;font-size:20px;color:var(--white);font-weight:500;margin-bottom:12px}
+    .footer-desc{font-size:13px;color:rgba(255,255,255,0.38);line-height:1.7;font-weight:300;max-width:280px;margin-bottom:20px}
+    .footer-contact-info{font-size:13px;color:rgba(255,255,255,0.4);line-height:1.9}
+    .footer-col h4{font-size:11px;font-weight:500;color:var(--gold);letter-spacing:0.12em;text-transform:uppercase;margin-bottom:16px}
+    .footer-col a{display:block;font-size:13px;color:rgba(255,255,255,0.4);margin-bottom:8px;transition:color 0.2s}
+    .footer-col a:hover{color:var(--gold2)}
+    .footer-bottom{border-top:1px solid rgba(255,255,255,0.06);padding:22px 48px;display:flex;align-items:center;justify-content:space-between}
+    .footer-copy{font-size:12px;color:rgba(255,255,255,0.22)}
+    @media(max-width:768px){.top-bar{display:none}nav{padding:0 20px}.nav-links,.nav-ctas{display:none}.hero-content{padding:60px 24px 100px}.hero h1{font-size:40px}.hero-stats{grid-template-columns:repeat(2,1fr);padding:20px 24px}.quick-links{grid-template-columns:1fr 1fr}.mission{grid-template-columns:1fr;padding:50px 24px;gap:40px}.programs{padding:50px 24px}.programs-grid{grid-template-columns:1fr}.impact{padding:50px 24px}.impact-inner{grid-template-columns:1fr;gap:40px}.action-split{grid-template-columns:1fr}.action-panel{padding:50px 28px}.newsletter{flex-direction:column;padding:40px 24px}.newsletter-form{width:100%;max-width:100%}.donate{padding:50px 24px}.donate-inner{grid-template-columns:1fr;gap:40px}.footer-top{grid-template-columns:1fr 1fr;padding:40px 24px;gap:28px}.footer-bottom{flex-direction:column;gap:10px;text-align:center;padding:20px 24px}}
+  </style>
+</head>
+<body>
+<div class="top-bar">
+  <div class="top-bar-left">Somali American Partnerships &nbsp;·&nbsp; Minneapolis, Minnesota &nbsp;·&nbsp; 501(c)(3) Nonprofit</div>
+  <div class="top-bar-right">
+    <a href="tel:6122233343">612-223-3343</a>
+    <a href="mailto:ekram@sap-mn.org">ekram@sap-mn.org</a>
+    <a href="support.html">Get Help</a>
+  </div>
+</div>
+<nav>
+  <a href="index.html" class="logo">
+    <div class="logo-rings">
+      <svg viewBox="0 0 80 95" xmlns="http://www.w3.org/2000/svg" width="40" height="48">
+        <path d="M0 90 Q40 100 80 90" fill="none" stroke="#C9A84C" stroke-width="2" stroke-linecap="round"/>
+        <circle cx="14" cy="78" r="6" fill="#0B1E3D"/>
+        <path d="M4 92 Q14 82 24 92" fill="#0B1E3D"/>
+        <circle cx="40" cy="75" r="5" fill="#C9A84C"/>
+        <path d="M32 90 Q40 81 48 90" fill="#C9A84C"/>
+        <circle cx="66" cy="78" r="6" fill="#0B1E3D"/>
+        <path d="M56 92 Q66 82 76 92" fill="#0B1E3D"/>
+        <rect x="37" y="38" width="6" height="38" rx="3" fill="#0B1E3D"/>
+        <path d="M40 58 Q24 46 12 28" fill="none" stroke="#0B1E3D" stroke-width="2.5" stroke-linecap="round"/>
+        <path d="M40 52 Q58 38 70 20" fill="none" stroke="#0B1E3D" stroke-width="2.5" stroke-linecap="round"/>
+        <path d="M40 44 Q40 24 40 10" fill="none" stroke="#C9A84C" stroke-width="3" stroke-linecap="round"/>
+        <circle cx="40" cy="8" r="9" fill="#C9A84C"/>
+        <circle cx="9" cy="24" r="7" fill="#0B1E3D" opacity="0.5"/>
+        <circle cx="72" cy="16" r="7" fill="#0B1E3D" opacity="0.5"/>
+      </svg>
+    </div>
+    <div>
+      <div class="logo-name">Somali American Partnerships</div>
+      <div class="logo-sub">Minneapolis, Minnesota</div>
+    </div>
+  </a>
+  <div class="nav-links">
+    <div class="nav-item">
+      <a href="about.html">About Us <span class="nav-arrow">▾</span></a>
+      <div class="dropdown">
+        <a href="about.html">Our Mission & Story</a>
+        <a href="about.html#values">Our Values</a>
+        <a href="team.html">Leadership & Staff</a>
+        <a href="about.html#timeline">Our Timeline</a>
+      </div>
+    </div>
+    <div class="nav-item">
+      <a href="programs.html">Programs <span class="nav-arrow">▾</span></a>
+      <div class="dropdown">
+        <a href="programs.html">All Programs</a>
+        <a href="programs.html#health">Health Navigation</a>
+        <a href="programs.html#education">Youth & Education</a>
+        <a href="programs.html#financial">Financial Stability</a>
+        <a href="programs.html#safety">Community Safety</a>
+      </div>
+    </div>
+    <div class="nav-item"><a href="team.html">Our Team</a></div>
+    <div class="nav-item"><a href="support.html">Get Support</a></div>
+    <div class="nav-item">
+      <a href="contact.html">Contact <span class="nav-arrow">▾</span></a>
+      <div class="dropdown">
+        <a href="contact.html">Contact Us</a>
+        <a href="contact.html#partner">Partner With Us</a>
+      </div>
+    </div>
+  </div>
+  <div class="nav-ctas">
+    <a href="support.html" class="btn-outline-nav">Get Help</a>
+    <a href="#donate" class="btn-donate-nav">Donate</a>
+  </div>
+</nav>
+<div class="hero">
+  <div class="hero-pattern">
+    <svg viewBox="0 0 500 700" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="250" cy="180" r="150" fill="none" stroke="white" stroke-width="1"/>
+      <circle cx="250" cy="180" r="90" fill="none" stroke="white" stroke-width="1"/>
+      <circle cx="250" cy="500" r="120" fill="none" stroke="white" stroke-width="1"/>
+      <circle cx="420" cy="350" r="70" fill="none" stroke="white" stroke-width="1"/>
+    </svg>
+  </div>
+  <div class="hero-content">
+    <div class="hero-eyebrow"><span>Somali American Partnerships</span></div>
+    <h1>Community is<br>Our <em>Foundation.</em></h1>
+    <p class="hero-desc">SAP connects Somali American families in the Twin Cities with culturally responsive programs across health, education, financial stability, and community safety.</p>
+    <div class="hero-actions">
+      <a href="programs.html" class="btn-hero-gold">Explore Our Programs</a>
+      <a href="contact.html" class="btn-hero-outline">Partner With Us</a>
+    </div>
+  </div>
+  <div class="hero-stats">
+    <div class="hero-stat"><div class="hero-stat-num">1,500+</div><div class="hero-stat-label">Youth Served</div></div>
+    <div class="hero-stat"><div class="hero-stat-num">450+</div><div class="hero-stat-label">Families Supported</div></div>
+    <div class="hero-stat"><div class="hero-stat-num">120+</div><div class="hero-stat-label">Workshops Held</div></div>
+    <div class="hero-stat"><div class="hero-stat-num">25+</div><div class="hero-stat-label">Active Partners</div></div>
+  </div>
+</div>
+<div class="quick-links">
+  <a href="support.html" class="quick-link">
+    <div class="ql-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></div>
+    <div><div class="ql-title">Get Support</div><div class="ql-sub">Free community services</div></div>
+  </a>
+  <a href="programs.html" class="quick-link">
+    <div class="ql-icon"><svg viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></div>
+    <div><div class="ql-title">Our Programs</div><div class="ql-sub">Health, education & more</div></div>
+  </a>
+  <a href="contact.html" class="quick-link">
+    <div class="ql-icon"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+    <div><div class="ql-title">Partner With Us</div><div class="ql-sub">Schools, agencies & funders</div></div>
+  </a>
+  <a href="#donate" class="quick-link">
+    <div class="ql-icon"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
+    <div><div class="ql-title">Donate</div><div class="ql-sub">Support our mission</div></div>
+  </a>
+</div>
+<div class="mission">
+  <div>
+    <div class="eyebrow">Who We Are</div>
+    <h2>A 501(c)(3) rooted in dignity, culture, and belonging</h2>
+    <p>Founded in December 2024, Somali American Partnerships was built to fill a critical gap — community-centered programs that honor Somali culture while building lasting bridges in Minnesota.</p>
+    <p>We believe every Somali American family deserves access to the resources, support, and opportunities they need to thrive — in their own language, on their own terms.</p>
+    <a href="about.html" class="btn-primary">Learn Our Story</a>
+  </div>
+  <div class="mission-visual">
+    <p class="mission-quote">"We build the kind of organization we wished had existed when our families first arrived — a trusted partner at every stage of the journey."</p>
+    <div class="mission-divider"></div>
+    <div class="mission-attr">Ekram Elmoge &nbsp;·&nbsp; Founder & Executive Director</div>
+    <div class="mission-facts">
+      <div><div class="mission-fact-num">2024</div><div class="mission-fact-label">Founded</div></div>
+      <div><div class="mission-fact-num">501(c)(3)</div><div class="mission-fact-label">IRS Registered</div></div>
+    </div>
+  </div>
+</div>
+<div class="programs">
+  <div class="section-header">
+    <div class="section-eyebrow">What We Do</div>
+    <h2>Four Pillars of Community Strength</h2>
+    <p style="font-size:16px;color:var(--muted);font-weight:300;max-width:520px;margin:12px auto 0;line-height:1.75">Every program is built around the lived experiences of Somali American families — designed with community, not just for community.</p>
+  </div>
+  <div class="programs-grid">
+    <a href="programs.html" class="prog-card">
+      <div class="prog-num">01</div>
+      <div class="prog-tag">Health</div>
+      <div class="prog-title">Culturally Responsive Health Navigation</div>
+      <p class="prog-desc">Bridging Somali families to accessible, culturally informed healthcare and wellness resources across the Twin Cities.</p>
+      <div class="prog-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+    </a>
+    <a href="programs.html" class="prog-card">
+      <div class="prog-num">02</div>
+      <div class="prog-tag">Education</div>
+      <div class="prog-title">Youth Mentorship & Academic Success</div>
+      <p class="prog-desc">Mentorship and academic support helping youth navigate their dual identity and achieve educational success.</p>
+      <div class="prog-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+    </a>
+    <a href="programs.html" class="prog-card">
+      <div class="prog-num">03</div>
+      <div class="prog-tag">Financial Stability</div>
+      <div class="prog-title">Economic Empowerment & Workforce Development</div>
+      <p class="prog-desc">Workforce development and financial literacy initiatives that build generational wealth for families.</p>
+      <div class="prog-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+    </a>
+    <a href="programs.html" class="prog-card">
+      <div class="prog-num">04</div>
+      <div class="prog-tag">Community Safety</div>
+      <div class="prog-title">Community Safety Net & Emergency Support</div>
+      <p class="prog-desc">Emergency support and community advocacy ensuring no Somali family in Minnesota faces hardship alone.</p>
+      <div class="prog-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+    </a>
+  </div>
+</div>
+<div class="impact">
+  <div class="impact-inner">
+    <div>
+      <div class="eyebrow" style="color:var(--gold)">Our Impact</div>
+      <h2>Making a real difference in the Twin Cities</h2>
+      <p>From youth mentorship to direct family advocacy, every program creates measurable, lasting change for Somali American families across Minneapolis and the broader Twin Cities.</p>
+      <a href="about.html" class="btn-gold">See Our Full Story</a>
+    </div>
+    <div class="impact-stats">
+      <div class="impact-stat"><div class="impact-num">1,500+</div><div class="impact-label">Youth Served</div></div>
+      <div class="impact-stat"><div class="impact-num">450+</div><div class="impact-label">Families Supported</div></div>
+      <div class="impact-stat"><div class="impact-num">120+</div><div class="impact-label">Workshops Held</div></div>
+      <div class="impact-stat"><div class="impact-num">25+</div><div class="impact-label">Active Partners</div></div>
+    </div>
+  </div>
+</div>
+<div class="action-split">
+  <div class="action-panel light">
+    <div class="action-eyebrow">Community Members</div>
+    <h2>Need support? We're here for you.</h2>
+    <p>All SAP services are free, confidential, and culturally responsive. From health navigation to emergency assistance — reach out today.</p>
+    <a href="support.html" class="btn-navy">Get Support Now</a>
+  </div>
+  <div class="action-panel dark">
+    <div class="action-eyebrow">Organizations & Funders</div>
+    <h2>Partner with SAP to expand our reach.</h2>
+    <p>We collaborate with schools, healthcare systems, city agencies, and funders to bring culturally grounded programs to more families.</p>
+    <a href="contact.html" class="btn-gold">Explore Partnership</a>
+  </div>
+</div>
+<div class="newsletter">
+  <div>
+    <h3>Stay Connected with SAP</h3>
+    <p>Get updates on our programs, community events, and impact stories.</p>
+  </div>
+  <div class="newsletter-form">
+    <input type="email" placeholder="Your email address">
+    <button>Subscribe</button>
+  </div>
+</div>
+<div class="donate" id="donate">
+  <div class="donate-inner">
+    <div>
+      <div class="eyebrow">Support Our Work</div>
+      <h2>Your gift changes a family's story</h2>
+      <p>Every contribution directly funds culturally responsive programs, youth mentorship, and family advocacy for Somali Americans in Minnesota.</p>
+      <ul class="donate-bullets">
+        <li>Tax-deductible under IRS 501(c)(3)</li>
+        <li>100% goes directly to community programs</li>
+        <li>Annual impact reports sent to all donors</li>
+      </ul>
+    </div>
+    <div>
+      <div class="donate-tiers">
+        <div class="tier active"><div class="tier-amount">$25</div><div class="tier-desc">Educational materials for one youth workshop</div></div>
+        <div class="tier"><div class="tier-amount">$50</div><div class="tier-desc">A mentorship session for a Somali American student</div></div>
+        <div class="tier"><div class="tier-amount">$100</div><div class="tier-desc">Family advocacy and social navigation services</div></div>
+        <div class="tier"><div class="tier-amount">Other</div><div class="tier-desc">Every gift strengthens our mission</div></div>
+      </div>
+      <button class="donate-btn">Donate Now — Make an Impact</button>
+    </div>
+  </div>
+</div>
+<div class="partners">
+  <div class="partners-label">Trusted by community partners across the Twin Cities</div>
+  <div class="partners-row">
+    <div class="partner-logo">City of Minneapolis</div>
+    <div class="partner-logo">Hennepin County</div>
+    <div class="partner-logo">MN Dept. of Health</div>
+    <div class="partner-logo">Twin Cities Schools</div>
+    <div class="partner-logo">Local Funders</div>
+  </div>
+</div>
+<footer>
+  <div class="footer-top">
+    <div>
+      <div class="footer-logo-name">Somali American Partnerships</div>
+      <p class="footer-desc">A 501(c)(3) nonprofit serving Somali American families in Minneapolis through culturally responsive programs across health, education, financial stability, and community safety.</p>
+      <div class="footer-contact-info">
+        <div>612-223-3343</div>
+        <div>ekram@sap-mn.org</div>
+        <div>2833 13th Ave S, Ste 225, Minneapolis, MN 55407</div>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Organization</h4>
+      <a href="about.html">About Us</a>
+      <a href="team.html">Our Team</a>
+      <a href="about.html">Our Story</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="footer-col">
+      <h4>Programs</h4>
+      <a href="programs.html">Health</a>
+      <a href="programs.html">Education</a>
+      <a href="programs.html">Financial Stability</a>
+      <a href="programs.html">Community Safety</a>
+    </div>
+    <div class="footer-col">
+      <h4>Get Involved</h4>
+      <a href="support.html">Get Support</a>
+      <a href="contact.html">Partner With Us</a>
+      <a href="#donate">Donate</a>
+      <a href="team.html">Volunteer</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">© 2026 Somali American Partnerships. All rights reserved. &nbsp;·&nbsp; IRS 501(c)(3) &nbsp;·&nbsp; EIN on file</div>
+    <div class="footer-copy">sap-mn.com</div>
+  </div>
+</footer>
+<script>
+  document.querySelectorAll('.tier').forEach(t=>{
+    t.addEventListener('click',function(){
+      document.querySelectorAll('.tier').forEach(x=>x.classList.remove('active'));
+      this.classList.add('active');
+    });
+  });
+</script>
+</body>
+</html>

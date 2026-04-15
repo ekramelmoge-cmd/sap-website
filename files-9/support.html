@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get Support | Somali American Partnerships</title>
+  <meta name="description" content="Get support from SAP — health, education, financial stability, and community safety resources for Somali American families in Minneapolis.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    :root{--navy:#0B1E3D;--navy2:#102548;--navy3:#163060;--gold:#C9A84C;--gold2:#E8C97A;--cream:#FAF8F3;--cream2:#F2EEE5;--text:#0B1E3D;--muted:#6B7A99;--white:#FFFFFF}
+    body{font-family:'DM Sans',sans-serif;color:var(--text);background:var(--white);line-height:1.6;overflow-x:hidden}
+    a{text-decoration:none;color:inherit}
+    nav{background:var(--navy);padding:0 48px;display:flex;align-items:center;justify-content:space-between;height:70px;position:sticky;top:0;z-index:100}
+    .logo{display:flex;align-items:center;gap:12px}
+    .logo-mark{width:38px;height:38px;border:2px solid var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-size:16px;font-weight:600;color:var(--gold)}
+    .logo-text{color:var(--white);font-size:14px;font-weight:500;letter-spacing:0.04em}
+    .logo-sub{color:var(--gold2);font-size:10px;font-weight:300;letter-spacing:0.08em;text-transform:uppercase;display:block;margin-top:1px}
+    .nav-links{display:flex;gap:28px;align-items:center}
+    .nav-links a{color:rgba(255,255,255,0.75);font-size:13px;font-weight:400;letter-spacing:0.03em;transition:color 0.2s}
+    .nav-links a:hover,.nav-links a.active{color:var(--gold2)}
+    .nav-cta{background:var(--gold)!important;color:var(--navy)!important;padding:9px 22px;border-radius:2px;font-weight:500!important}
+    .hero{background:var(--navy);padding:90px 48px 70px;position:relative;overflow:hidden}
+    .hero-accent{position:absolute;right:0;top:0;width:35%;height:100%;background:var(--navy2);clip-path:polygon(12% 0,100% 0,100% 100%,0 100%)}
+    .hero-content{position:relative;z-index:2}
+    .eyebrow{color:var(--gold);font-size:11px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;margin-bottom:16px;display:flex;align-items:center;gap:10px}
+    .eyebrow::before{content:'';width:24px;height:1px;background:var(--gold)}
+    h1{font-family:'Cormorant Garamond',serif;font-size:52px;font-weight:500;color:var(--white);line-height:1.15;margin-bottom:16px}
+    .hero p{color:rgba(255,255,255,0.6);font-size:16px;font-weight:300;max-width:520px;line-height:1.75}
+    section{padding:80px 48px}
+    h2{font-family:'Cormorant Garamond',serif;font-size:42px;font-weight:500;color:var(--navy);line-height:1.15;margin-bottom:16px}
+    .section-eyebrow{color:var(--gold);font-size:11px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;display:flex;align-items:center;gap:10px;margin-bottom:16px}
+    .section-eyebrow::before{content:'';width:24px;height:1px;background:var(--gold)}
+    .urgent{background:var(--gold);padding:24px 48px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .urgent p{font-size:15px;font-weight:500;color:var(--navy)}
+    .urgent a{background:var(--navy);color:var(--white);padding:10px 24px;border-radius:2px;font-size:13px;font-weight:500;white-space:nowrap}
+    .support-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:rgba(11,30,61,0.08);margin-top:48px}
+    .support-card{background:var(--white);padding:40px 36px}
+    .support-icon{width:52px;height:52px;border:1px solid rgba(11,30,61,0.1);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:20px;font-size:22px}
+    .support-title{font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:500;color:var(--navy);margin-bottom:12px}
+    .support-desc{font-size:14px;color:var(--muted);line-height:1.7;font-weight:300;margin-bottom:20px}
+    .support-list{list-style:none;display:flex;flex-direction:column;gap:8px;margin-bottom:24px}
+    .support-list li{display:flex;align-items:flex-start;gap:8px;font-size:13px;color:var(--text)}
+    .support-list li::before{content:'';width:5px;height:5px;border-radius:50%;background:var(--gold);flex-shrink:0;margin-top:7px}
+    .btn-navy{background:var(--navy);color:var(--white);padding:12px 24px;border-radius:2px;font-size:13px;font-weight:500;display:inline-block;transition:background 0.2s}
+    .btn-navy:hover{background:var(--navy2)}
+    .how-it-works{background:var(--cream);padding:80px 48px}
+    .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:48px;position:relative}
+    .steps::before{content:'';position:absolute;top:24px;left:10%;right:10%;height:1px;background:rgba(11,30,61,0.1)}
+    .step{text-align:center;padding:0 20px}
+    .step-num{width:48px;height:48px;border-radius:50%;background:var(--navy);color:var(--gold);font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:600;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;position:relative;z-index:1}
+    .step-title{font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:500;color:var(--navy);margin-bottom:8px}
+    .step-desc{font-size:13px;color:var(--muted);font-weight:300;line-height:1.6}
+    .resources{background:var(--navy);padding:80px 48px}
+    .resources h2{color:var(--white)}
+    .resources-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:40px}
+    .resource-card{border:1px solid rgba(201,168,76,0.2);padding:24px}
+    .resource-title{font-size:15px;font-weight:500;color:var(--gold2);margin-bottom:8px}
+    .resource-desc{font-size:13px;color:rgba(255,255,255,0.5);line-height:1.6;font-weight:300;margin-bottom:12px}
+    .resource-phone{font-size:13px;color:var(--gold);font-weight:500}
+    .contact-form{background:var(--cream2);padding:80px 48px}
+    .form-inner{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start}
+    label{display:block;font-size:11px;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+    input,textarea,select{width:100%;background:var(--white);border:0.5px solid rgba(11,30,61,0.15);padding:11px 14px;font-family:'DM Sans',sans-serif;font-size:14px;color:var(--text);outline:none;border-radius:0;transition:border-color 0.2s;margin-bottom:20px}
+    input:focus,textarea:focus,select:focus{border-color:var(--gold)}
+    textarea{height:120px;resize:vertical}
+    .submit-btn{background:var(--navy);color:var(--white);border:none;padding:14px 36px;font-family:'DM Sans',sans-serif;font-size:14px;font-weight:500;cursor:pointer;width:100%;transition:background 0.2s}
+    .submit-btn:hover{background:var(--navy3)}
+    .contact-info h3{font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:500;color:var(--navy);margin-bottom:16px}
+    .contact-info p{font-size:15px;color:var(--muted);font-weight:300;line-height:1.8;margin-bottom:28px}
+    .contact-item{display:flex;align-items:center;gap:12px;margin-bottom:16px}
+    .contact-dot{width:8px;height:8px;border-radius:50%;background:var(--gold);flex-shrink:0}
+    .contact-text{font-size:14px;color:var(--text)}
+    .contact-label{font-size:11px;color:var(--muted);letter-spacing:0.06em;text-transform:uppercase;display:block;margin-bottom:2px}
+    footer{background:var(--navy);border-top:1px solid rgba(201,168,76,0.15);padding:48px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:20px}
+    .footer-logo{font-family:'Cormorant Garamond',serif;font-size:18px;color:var(--white);font-weight:500}
+    .footer-copy{font-size:12px;color:rgba(255,255,255,0.35)}
+    .footer-links{display:flex;gap:24px}
+    .footer-links a{font-size:12px;color:rgba(255,255,255,0.4);transition:color 0.2s}
+    .footer-links a:hover{color:var(--gold2)}
+    @media(max-width:768px){nav{padding:0 20px}.nav-links{display:none}.hero{padding:60px 24px 40px}h1{font-size:36px}section,.how-it-works,.resources,.contact-form{padding:50px 24px}.urgent{flex-direction:column}.support-grid{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr}.steps::before{display:none}.resources-grid{grid-template-columns:1fr}.form-inner{grid-template-columns:1fr}footer{flex-direction:column;text-align:center}}
+  
+    .top-bar{background:#102548;padding:8px 48px;display:flex;align-items:center;justify-content:space-between}
+    .top-bar-left{font-size:12px;color:rgba(255,255,255,0.5)}
+    .top-bar-right{display:flex;gap:24px}
+    .top-bar-right a{font-size:12px;color:rgba(255,255,255,0.6);text-decoration:none;transition:color 0.2s}
+    .top-bar-right a:hover{color:#E8C97A}
+    nav{background:#fff;padding:0 48px;display:flex;align-items:center;justify-content:space-between;height:72px;border-bottom:1px solid rgba(11,30,61,0.08);position:sticky;top:0;z-index:100;box-shadow:0 2px 12px rgba(0,0,0,0.04)}
+    .logo{display:flex;align-items:center;gap:12px;text-decoration:none}
+    .logo-icon{display:flex;align-items:center}
+    .logo-name{font-family:'Cormorant Garamond',serif;font-size:17px;font-weight:600;color:#0B1E3D;line-height:1.2}
+    .logo-sub{font-size:10px;color:#6B7A99;letter-spacing:0.08em;text-transform:uppercase}
+    .nav-links{display:flex;gap:4px;align-items:center}
+    .nav-item{position:relative}
+    .nav-item>a{color:#0B1E3D;font-size:14px;padding:8px 13px;display:flex;align-items:center;gap:4px;transition:color 0.2s;white-space:nowrap;text-decoration:none}
+    .nav-item>a:hover{color:#C9A84C}
+    .nav-arrow{font-size:10px;opacity:0.4}
+    .dropdown{position:absolute;top:calc(100% + 4px);left:0;background:#fff;border:0.5px solid rgba(11,30,61,0.1);box-shadow:0 8px 24px rgba(0,0,0,0.08);min-width:200px;opacity:0;visibility:hidden;transition:all 0.2s;z-index:200}
+    .nav-item:hover .dropdown{opacity:1;visibility:visible}
+    .dropdown a{display:block;padding:10px 20px;font-size:13px;color:#0B1E3D;border-bottom:0.5px solid rgba(11,30,61,0.05);transition:background 0.15s;text-decoration:none}
+    .dropdown a:last-child{border:none}
+    .dropdown a:hover{background:#FAF8F3;color:#0B1E3D}
+    .nav-ctas{display:flex;gap:8px;margin-left:16px}
+    .btn-outline-nav{border:1.5px solid #0B1E3D;color:#0B1E3D;padding:8px 16px;font-size:13px;font-weight:500;transition:all 0.2s;text-decoration:none}
+    .btn-outline-nav:hover{background:#0B1E3D;color:#fff}
+    .btn-donate-nav{background:#C9A84C;color:#0B1E3D;padding:8px 18px;font-size:13px;font-weight:500;transition:background 0.2s;text-decoration:none}
+    .btn-donate-nav:hover{background:#E8C97A}
+    @media(max-width:768px){.top-bar{display:none}nav{padding:0 20px}.nav-links,.nav-ctas{display:none}}
+    </style>
+</head>
+<body>
+<div class="top-bar">
+  <div class="top-bar-left">Somali American Partnerships &nbsp;&middot;&nbsp; Minneapolis, Minnesota &nbsp;&middot;&nbsp; 501(c)(3) Nonprofit</div>
+  <div class="top-bar-right">
+    <a href="tel:6122233343">612-223-3343</a>
+    <a href="mailto:ekram@sap-mn.org">ekram@sap-mn.org</a>
+    <a href="support.html">Get Help</a>
+  </div>
+</div>
+<nav>
+  <a href="index.html" class="logo">
+    <div class="logo-icon"><svg viewBox="0 0 80 95" xmlns="http://www.w3.org/2000/svg" width="44" height="52">
+          <path d="M0 90 Q40 100 80 90" fill="none" stroke="#C9A84C" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="14" cy="78" r="6" fill="#0B1E3D"/>
+          <path d="M4 92 Q14 82 24 92" fill="#0B1E3D"/>
+          <circle cx="40" cy="75" r="5" fill="#C9A84C"/>
+          <path d="M32 90 Q40 81 48 90" fill="#C9A84C"/>
+          <circle cx="66" cy="78" r="6" fill="#0B1E3D"/>
+          <path d="M56 92 Q66 82 76 92" fill="#0B1E3D"/>
+          <rect x="37" y="38" width="6" height="38" rx="3" fill="#0B1E3D"/>
+          <path d="M40 58 Q24 46 12 28" fill="none" stroke="#0B1E3D" stroke-width="2.5" stroke-linecap="round"/>
+          <path d="M40 52 Q58 38 70 20" fill="none" stroke="#0B1E3D" stroke-width="2.5" stroke-linecap="round"/>
+          <path d="M40 44 Q40 24 40 10" fill="none" stroke="#C9A84C" stroke-width="3" stroke-linecap="round"/>
+          <circle cx="40" cy="8" r="9" fill="#C9A84C"/>
+          <circle cx="9" cy="24" r="7" fill="#0B1E3D" opacity="0.5"/>
+          <circle cx="72" cy="16" r="7" fill="#0B1E3D" opacity="0.5"/>
+        </svg></div>
+    <div>
+      <div class="logo-name">Somali American Partnerships</div>
+      <div class="logo-sub">Minneapolis, Minnesota</div>
+    </div>
+  </a>
+  <div class="nav-links">
+    <div class="nav-item">
+      <a href="about.html">About Us <span class="nav-arrow">&#9662;</span></a>
+      <div class="dropdown">
+        <a href="about.html">Our Mission &amp; Story</a>
+        <a href="team.html">Leadership &amp; Staff</a>
+      </div>
+    </div>
+    <div class="nav-item">
+      <a href="programs.html">Programs <span class="nav-arrow">&#9662;</span></a>
+      <div class="dropdown">
+        <a href="programs.html">All Programs</a>
+        <a href="programs.html">Health Navigation</a>
+        <a href="programs.html">Youth &amp; Education</a>
+        <a href="programs.html">Financial Stability</a>
+        <a href="programs.html">Community Safety</a>
+      </div>
+    </div>
+    <div class="nav-item"><a href="team.html">Our Team</a></div>
+    <div class="nav-item"><a href="support.html"class="active">Get Support</a></div>
+    <div class="nav-item">
+      <a href="contact.html">Contact <span class="nav-arrow">&#9662;</span></a>
+      <div class="dropdown">
+        <a href="contact.html">Contact Us</a>
+        <a href="contact.html">Partner With Us</a>
+      </div>
+    </div>
+  </div>
+  <div class="nav-ctas">
+    <a href="support.html" class="btn-outline-nav">Get Help</a>
+    <a href="index.html#donate" class="btn-donate-nav">Donate</a>
+  </div>
+</nav>
+
+<div class="urgent">
+  <p> Need immediate help? Call us directly — we're here for you.</p>
+  <a href="tel:6122233343">Call 612-223-3343</a>
+</div>
+
+<div class="hero">
+  <div class="hero-accent"></div>
+  <div class="hero-content">
+    <div class="eyebrow">Get Support</div>
+    <h1>We Are Here<br>For You</h1>
+    <p>Whatever you're facing — health challenges, financial hardship, housing instability, or youth support — SAP is your trusted partner. All services are free, confidential, and culturally responsive.</p>
+  </div>
+</div>
+
+<section style="background:var(--white)">
+  <div class="section-eyebrow">Our Services</div>
+  <h2>How We Can Help</h2>
+  <div class="support-grid">
+    <div class="support-card">
+      <div class="support-icon"></div>
+      <div class="support-title">Health Support</div>
+      <p class="support-desc">Connecting you to healthcare, mental health support, and wellness resources in a culturally safe environment.</p>
+      <ul class="support-list">
+        <li>Health insurance enrollment help</li>
+        <li>Finding Somali-speaking doctors</li>
+        <li>Mental health referrals</li>
+        <li>Maternal and child health</li>
+        <li>Chronic disease management</li>
+      </ul>
+      <a href="contact.html" class="btn-navy">Request Health Support</a>
+    </div>
+    <div class="support-card">
+      <div class="support-icon"></div>
+      <div class="support-title">Youth & Education</div>
+      <p class="support-desc">Academic support, mentorship, and youth development programs for Somali American children and young adults.</p>
+      <ul class="support-list">
+        <li>After-school tutoring</li>
+        <li>Youth mentorship matching</li>
+        <li>College access guidance</li>
+        <li>Youth leadership programs</li>
+        <li>Substance use prevention</li>
+      </ul>
+      <a href="contact.html" class="btn-navy">Enroll Your Child</a>
+    </div>
+    <div class="support-card">
+      <div class="support-icon"></div>
+      <div class="support-title">Financial & Employment</div>
+      <p class="support-desc">Job readiness, financial literacy, and economic empowerment resources to build your family's financial future.</p>
+      <ul class="support-list">
+        <li>Resume and job application help</li>
+        <li>Financial literacy workshops</li>
+        <li>Banking and credit guidance</li>
+        <li>Small business support</li>
+        <li>Benefits and public assistance navigation</li>
+      </ul>
+      <a href="contact.html" class="btn-navy">Get Financial Help</a>
+    </div>
+    <div class="support-card">
+      <div class="support-icon"></div>
+      <div class="support-title">Emergency & Safety</div>
+      <p class="support-desc">When you need immediate help — food, housing, safety — SAP's community safety net is here for you.</p>
+      <ul class="support-list">
+        <li>Emergency food assistance</li>
+        <li>Housing stability support</li>
+        <li>Domestic safety resources</li>
+        <li>Legal aid referrals</li>
+        <li>Immigration support connections</li>
+      </ul>
+      <a href="contact.html" class="btn-navy">Get Emergency Help</a>
+    </div>
+  </div>
+</section>
+
+<div class="how-it-works">
+  <div class="section-eyebrow">Our Process</div>
+  <h2>How to Get Started</h2>
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">1</div>
+      <div class="step-title">Reach Out</div>
+      <p class="step-desc">Call us, fill out our form, or walk into our office. No appointment needed for urgent needs.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <div class="step-title">We Listen</div>
+      <p class="step-desc">A culturally responsive SAP team member will listen to your needs with care and without judgment.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <div class="step-title">We Connect You</div>
+      <p class="step-desc">We match you with the right programs, resources, and community partners for your situation.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">4</div>
+      <div class="step-title">We Walk With You</div>
+      <p class="step-desc">SAP stays with you through the process — we don't just refer, we support.</p>
+    </div>
+  </div>
+</div>
+
+<div class="resources">
+  <div class="section-eyebrow" style="color:var(--gold)">Community Resources</div>
+  <h2>Additional Resources</h2>
+  <div class="resources-grid">
+    <div class="resource-card">
+      <div class="resource-title">Crisis Support</div>
+      <p class="resource-desc">If you or someone you know is in crisis, please reach out to these 24/7 services immediately.</p>
+      <div class="resource-phone">988 Suicide & Crisis Lifeline: 988</div>
+    </div>
+    <div class="resource-card">
+      <div class="resource-title">Food Assistance</div>
+      <p class="resource-desc">Second Harvest Heartland and local food shelves serve Somali American families across the Twin Cities.</p>
+      <div class="resource-phone">Second Harvest: 651-484-5117</div>
+    </div>
+    <div class="resource-card">
+      <div class="resource-title">Housing Help</div>
+      <p class="resource-desc">Hennepin County housing stability programs offer emergency rental assistance and eviction prevention.</p>
+      <div class="resource-phone">Hennepin County: 612-348-4111</div>
+    </div>
+    <div class="resource-card">
+      <div class="resource-title">Legal Aid</div>
+      <p class="resource-desc">Mid-Minnesota Legal Aid provides free legal services to low-income residents including immigration support.</p>
+      <div class="resource-phone">Legal Aid: 612-332-1441</div>
+    </div>
+    <div class="resource-card">
+      <div class="resource-title">Healthcare</div>
+      <p class="resource-desc">Hennepin Healthcare and community health clinics offer affordable, culturally responsive care.</p>
+      <div class="resource-phone">Hennepin Healthcare: 612-873-3000</div>
+    </div>
+    <div class="resource-card">
+      <div class="resource-title">Employment</div>
+      <p class="resource-desc">Minnesota Department of Employment offers workforce services, job training, and unemployment support.</p>
+      <div class="resource-phone">DEED: 651-259-7114</div>
+    </div>
+  </div>
+</div>
+
+<div class="contact-form">
+  <div class="form-inner">
+    <div class="contact-info">
+      <h3>Request Support from SAP</h3>
+      <p>Fill out this form and a member of our team will contact you within 1 business day. All information is kept confidential.</p>
+      <div class="contact-item">
+        <div class="contact-dot"></div>
+        <div><span class="contact-label">Phone</span><div class="contact-text">612-223-3343</div></div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-dot"></div>
+        <div><span class="contact-label">Email</span><div class="contact-text">ekram@sap-mn.org</div></div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-dot"></div>
+        <div><span class="contact-label">Location</span><div class="contact-text">2833 13th Ave S, Ste 225<br>Minneapolis, MN 55407</div></div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-dot"></div>
+        <div><span class="contact-label">Hours</span><div class="contact-text">Monday–Friday, 9am–5pm</div></div>
+      </div>
+    </div>
+    <div>
+      <div style="margin-bottom:20px">
+        <label>Full Name</label>
+        <input type="text" placeholder="Your name">
+      </div>
+      <div style="margin-bottom:20px">
+        <label>Phone Number</label>
+        <input type="tel" placeholder="612-000-0000">
+      </div>
+      <div style="margin-bottom:20px">
+        <label>Type of Support Needed</label>
+        <select>
+          <option value="">Select a category</option>
+          <option>Health Support</option>
+          <option>Youth & Education</option>
+          <option>Financial & Employment</option>
+          <option>Emergency / Safety</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div style="margin-bottom:20px">
+        <label>Tell us about your situation</label>
+        <textarea placeholder="Briefly describe what you need help with..."></textarea>
+      </div>
+      <button class="submit-btn">Submit Request</button>
+      <p style="font-size:12px;color:var(--muted);margin-top:12px;line-height:1.6">All information is kept strictly confidential. We respond within 1 business day.</p>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div><div class="footer-logo">Somali American Partnerships</div><div class="footer-copy" style="margin-top:6px">Minneapolis, MN · 501(c)(3) Nonprofit</div></div>
+  <div class="footer-links">
+    <a href="index.html">Home</a><a href="about.html">About</a><a href="programs.html">Programs</a><a href="team.html">Team</a><a href="support.html">Support</a><a href="contact.html">Contact</a>
+  </div>
+  <div class="footer-copy">© 2026 SAP. All rights reserved.</div>
+</footer>
+</body>
+</html>
